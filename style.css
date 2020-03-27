@@ -171,6 +171,27 @@ body{
 
 }
 
+.content-group .content-group-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.under-line{
+  width: 25px;
+  height: 7px;
+  background-color: #ffdf00;
+  margin-bottom: 7px;
+}
+
+.content-group-item .content-group-title{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5b5858;
+}
+
 /* end content */
 
 
