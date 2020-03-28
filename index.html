@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Le Phuc Lam</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="ic-pl.png" type="image/x-icon"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -74,7 +75,7 @@
               <div class="sidebar-item">
                 <i class="fa fa-phone"></i>
                 <p class="sidebar-item-title">CONTACT</p>
-                <p class="sidebar-item-des">LET CONNECT MEửi</p>
+                <p class="sidebar-item-des">LET CONNECT ME</p>
               </div>
             </div>
           </div>
@@ -101,7 +102,7 @@
               <div class="content-item">
                 <p class="content-item-name">Resume</p>
                 <div class="content-item-position">
-                  This Is My Activity 
+                  This Is My Activity
                 </div>
               </div>
             </div>
@@ -125,6 +126,50 @@
                 </div>
               </div>
             </div>
+            <div class="content-group">
+              <div class="content-group-item">
+                <div class="under-line"></div>
+                <div class="content-group-title">MAP LOCATION</div>
+              </div>
+            </div>
+            <div class="map-connect">
+              <div class="map-api" id = "map"></div>
+            </div>
+            <div class="content-group">
+              <div class="content-group-item">
+                <div class="under-line"></div>
+                <div class="content-group-title">PERSONAL INFO</div>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="info-box info-local">
+                  <i class="fa fa-map-marker"></i>
+                  <p class="info-box-content">Drop On In</p>
+                  <p>77/17 Nhat Tao Street</p>
+                  <p>Ward 4, District 10</p>
+                  <p>In Ho Chi Minh City</p>
+                </div>
+                <div class="info-box info-phone">
+                  <i class="fa fa-phone"></i>
+                  <p class="info-box-content">Give Me A Call</p>
+                  <p>Mobile: 0344 656 534</p>
+                </div>
+                <div class="info-box info-mail">
+                  <i class="fa fa-envelope"></i>
+                  <p class="info-box-content">Let's Connect</p>
+                  <p>Facebook: <a href="https://facebook.com/phuclam534">@fb_phuclam</a></p>
+                  <p>Instagram: <a href="https://instagram.com/lam_boy.ms/">@phuclamle</a></p>
+                  <p>Twitter: <a href="https://twitter.com/scofiel13849938">@phuclamle</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="underline-content">
+            <div class="un-1"></div>
+            <div class="un-2"></div>
+            <div class="un-3"></div>
           </div>
         </div>
         <div class="social-contact">
@@ -148,5 +193,22 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 10.765094, lng: 106.669687},
+          zoom: 16
+        });
+    
+      var marker = new google.maps.Marker({
+          position: {lat: 10.765094, lng: 106.669687},
+          map: map
+      })
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrr7XtX9rCKbYDSa32Yrw0ka1OIt9hQfU&callback=initMap"
+    async defer></script>
   </body>
 </html>
