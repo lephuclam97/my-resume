@@ -7,6 +7,9 @@ var arrSide = ['brand-side-1','brand-side-2','brand-side-3','brand-side-4']
 // }
 
 $(document).ready(function (){
+
+    // $('.info-box-item').carousel();
+
     $('#brand-side-1').css('background','#ffdf00')
     $('.brand-side-2-content').css('display','none')
     $('.brand-side-3-content').css('display','none')

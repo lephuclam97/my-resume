@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
 body{
     margin: 0px;
     padding: 0px;
@@ -47,6 +47,7 @@ body{
 
 .brand-avatar img{
   max-width: 100%;
+  height: 100%;
 }
 
 .brand-name{
@@ -142,6 +143,7 @@ body{
     min-height: 1000px;
     position: relative;
     margin-bottom: 100px;
+    /* overflow: hidden; */
 }
 .underline-content {
   position: absolute;
@@ -183,6 +185,96 @@ body{
   margin-left: 20px;
 }
 
+.about-list-des{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.about-box{
+  position: relative; 
+  width: 230px;
+  height: 230px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5)
+}
+
+.about-box:first-child{
+  margin-left: 0;
+}
+
+.about-box:last-child{
+  margin-right: 0;
+}
+
+.about-box .box-brand{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.about-box:hover .box-brand{
+  transform: rotateY(-135deg);
+}
+.about-box .box-brand img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  /* height: 100%; */
+} 
+
+.about-box:hover{
+  z-index: 1000;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5)
+}
+
+.about-box:hover .box-content{
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+  box-sizing: border-box;
+}
+.about-box .box-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 230px;
+  padding:20px;
+  box-sizing: border-box;
+  z-index: 0;
+  overflow: hidden;
+
+}
+
+.about-box .box-content p{
+  font-family: 'Baloo 2', cursive;
+
+}
+
+.about-slogan{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.about-slogan .slogan{
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 21px;
+  margin: 0 auto;
+}
 .content-title{
   width:100%;
   height: 250px;
@@ -454,3 +546,13 @@ body{
 }
 
 /* end social-contact */
+
+
+/* responsive */
+
+@media(max-width: 1200px){
+  .contact-info-item {
+    flex-direction: column;
+  }
+}
+/* end responsive */
