@@ -489,15 +489,19 @@ body{
 
 .experience-box .p-day{
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Baloo 2', cursive;
   color: #999999;
   margin-bottom: 5px !important;
   position: relative;
 }
-
+.experience-box .p-pos{
+  font-family: 'Baloo 2', cursive;
+}
 .experience-box .p-des{
   width: 240px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Baloo 2', cursive;
   color: #999999;
   font-size: 14px;
   line-height: 20px;
