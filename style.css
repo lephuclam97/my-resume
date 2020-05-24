@@ -666,6 +666,112 @@ body{
   border: 8px solid white;
 
 }
+
+/* skill */
+.skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; 
+}
+
+.skill-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* background: yellow; */
+  position: relative;
+}
+
+.skill-type{
+  width: 50%;
+  height: 500px;
+  display: flex;
+  margin-right: 50px;
+  flex-direction: column;
+
+}
+
+.skill-type::after{
+  content: '';
+  width: 1px;
+  height: 75%;
+  position: absolute;
+  background: #2a2a2a21;
+  top: -50px;
+  right: 50%;
+
+}
+
+.skill-type::before{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 21px;
+  background: #ffdf00;
+  top: -70px;
+  right: calc(48% + 2px);
+  z-index: 2;
+  border: 8px solid white;
+}
+
+
+.skill-info{
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end;
+  margin: 5px 0px;
+}
+
+.rating{
+  margin-right: 20px;
+}
+
+.rating span{
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background: yellow;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0px 3px;
+}
+
+.rating .false{
+  background: #eaeaea !important;
+}
+
+.skill-name{
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  position: relative;
+  font-size: 13px;
+}
+
+.skill-activ::before{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 21px;
+  background: #ffdf00;
+  bottom: 140px;
+  left: -51px;
+  z-index: 2;
+  border: 8px solid white;
+
+}
+.skill-activ{
+  width: 50%;
+  height: 500px;
+  padding-left: 20px;
+  position: relative;
+}
+
+
 /*  */
 .content-title{
   width:100%;
