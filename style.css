@@ -36,6 +36,35 @@ body {
   width: 160px;
 }
 
+.re-branding img {
+  width: 100%;
+  height: auto;
+}
+.re-navigation {
+  width: 100%;
+  height: 13vw;
+  margin-top: -4px;
+  background: red;
+  display: flex;
+}
+
+.re-navigation .brand-side-bar {
+  border: 0.5px solid #808080bd;
+}
+
+.re-navigation .brand-side-bar:nth-child(2) {
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #808080bd;
+}
+/* .re-navigation .brand-side-bar:first-child {
+  border-right: none;
+}
+
+.re-navigation .brand-side-bar:last-child {
+  border-left: none;
+} */
+
 .branding {
   width: 100%;
   display: flex;
@@ -1104,6 +1133,17 @@ body {
 
 /* responsive */
 
+@media only screen and (min-width: 1201px) {
+  /* navigation */
+  .re-branding {
+    display: none;
+  }
+
+  .re-navigation {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   /* page1 */
   .container .profile .navigation {
@@ -1175,6 +1215,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  /* re-navigation */
+  .re-navigation .sidebar-item p {
+    display: none;
+  }
+
+  .re-navigation .sidebar-item i {
+    font-size: 40px;
+  }
+
   /* page1 */
   .about-insta-box .insta-pic {
     width: 70px;
@@ -1323,6 +1372,10 @@ body {
   /* page 2 */
   .services-box {
     font-size: 13px;
+  }
+
+  .rating {
+    margin-right: 30px;
   }
 }
 /* end responsive */
