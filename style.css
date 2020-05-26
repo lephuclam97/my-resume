@@ -1133,6 +1133,16 @@ body {
 
 /* responsive */
 
+@media only screen and (min-width: 1441px) {
+  .skill-type::before {
+    content: none;
+  }
+
+  .skill-activ::before {
+    content: none;
+  }
+}
+
 @media only screen and (min-width: 1201px) {
   /* navigation */
   .re-branding {
@@ -1376,6 +1386,66 @@ body {
 
   .rating {
     margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  /* re-navigation */
+  .re-navigation .sidebar-item i {
+    font-size: 30px;
+  }
+  .about-insta-box .insta-pic {
+    width: 50px;
+    padding: 0px 2px;
+  }
+
+  .insta-di-pic::before {
+    height: 50px;
+    left: 2px;
+    width: calc(100% - 4px);
+  }
+
+  .personal-contact .personal-box {
+    flex-direction: column;
+  }
+
+  .personal-contact .personal-box .personal-title {
+    width: auto;
+    text-align: left;
+    padding: 40px 0 0 60px;
+    margin: 0px;
+  }
+
+  .personal-contact .personal-box .personal-title a {
+    display: none;
+  }
+
+  .personal-contact .personal-box .personal-title li:nth-child(3) {
+    margin-left: 2px;
+  }
+  .personal-contact .personal-title .ti-dis {
+    float: left;
+  }
+  .personal-contact .personal-box .personal-result {
+    width: auto;
+    padding: 0px 0 0 60px;
+  }
+
+  .personal-contact .personal-box .personal-result a {
+    padding: 0px 0 0 40px;
+    bottom: -37px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .about-slogan .slogan {
+    font-size: 16px;
   }
 }
 /* end responsive */
